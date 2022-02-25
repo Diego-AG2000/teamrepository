@@ -20,12 +20,12 @@ public class JumpCommand implements Command {
         while(read.hasNextLine()) {
             int i = 0;
             for (i = 0; i < 6; i++) { // reads from zero to five
-                read.nextLine();
+                System.out.println(read.nextLine());
             }
             i = 0;
-            sleep(10);
-            clear();
+            sleep(1);
         }
+        clear();
     }
 
     private void sleep(int num) {
