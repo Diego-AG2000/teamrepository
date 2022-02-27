@@ -14,20 +14,23 @@ public class Player {
      * Makes player jump
      */
     public void jump() {
-        JumpCommand.execute();
+       JumpCommand jump = new JumpCommand(player);
+       jump.execute();
     }
 
     /**
      * Makes player fire
      */
     public void fire() {
-        FireCommand.execute();
+        FireCommand fire = new FireCommand(player);
+        fire.execute();
     }
 
     /**
      * Makes player run
      */
     public void runForward() {
-        RunCommand.execute();
+        RunCommand run = new RunCommand(player);
+        run.execute();
     }
 }
