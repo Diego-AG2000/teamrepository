@@ -11,14 +11,15 @@ import java.util.Scanner;
 
 public class FireCommand implements Command{
     public Player player;
-    File fire = new File("./fire.txt");
-    Scanner read = new Scanner(fire);
-
+    
     public FireCommand(Player player) {
         this.player = player;
     }
 
     public void execute(){
+        File fire = new File("./fire.txt");
+        Scanner read = new Scanner(fire);
+
         while(read.hasNextLine()) {
             int i = 0;
             for(i = 0; i < 4; i++) {
@@ -28,6 +29,7 @@ public class FireCommand implements Command{
             sleep(1);
         }
         clear();
+        read.close();
     }
 
     private void sleep(int num) {

@@ -9,8 +9,7 @@ import java.util.Scanner;
 
 public class JumpCommand implements Command {
     public Player player;
-    File jump = new File("./jump.txt");
-    Scanner read = new Scanner(jump);
+    
 
     /**
      * Creates a new jump command
@@ -25,6 +24,9 @@ public class JumpCommand implements Command {
      * Reads the text file and make the player look lik they're jumping
      */
     public void execute() {
+        File jump = new File("./jump.txt");
+        Scanner read = new Scanner(jump);
+
         while(read.hasNextLine()) {
             int i = 0;
             for (i = 0; i < 6; i++) { // reads from zero to five
@@ -34,6 +36,7 @@ public class JumpCommand implements Command {
             sleep(1);
         }
         clear();
+        read.close();
     }
 
     /**
