@@ -14,10 +14,16 @@ public class FireCommand implements Command{
     File fire = new File("./fire.txt");
     Scanner read = new Scanner(fire);
 
+    /**
+     * default constructor
+     * @param player
+     */
     public FireCommand(Player player) {
         this.player = player;
     }
-
+    /**
+     * Run through the file and prints the appropriate image
+     */
     public void execute(){
         while(read.hasNextLine()) {
             int i = 0;
@@ -29,7 +35,10 @@ public class FireCommand implements Command{
         }
         clear();
     }
-
+    /**
+     * Sleeps the program
+     * @param num
+     */
     private void sleep(int num) {
         try {
             TimeUnit.MILLISECONDS.sleep(num);
@@ -37,7 +46,9 @@ public class FireCommand implements Command{
             System.out.println("Timmer error");
         }
     }
-    
+    /**
+     * Clears the console
+     */
     private void clear() {
         System.out.print("\033[H\033[2J");
     }

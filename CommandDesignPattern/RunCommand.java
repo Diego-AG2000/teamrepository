@@ -9,10 +9,16 @@ public class RunCommand implements Command{
     File run = new File("./run.txt");
     Scanner read = new Scanner(run);
 
+    /**
+     * default constructor
+     * @param player
+     */
     public RunCommand(Player player){
         this.player = player;
     }
-
+      /**
+     * Run through the file and prints the appropriate image
+     */
     public void execute(){
         while(read.hasNextLine()) {
             int i = 0;
@@ -24,7 +30,10 @@ public class RunCommand implements Command{
         }
         clear();
     }
-
+    /**
+     * Sleeps the program
+     * @param num
+     */
     private void sleep(int num) {
         try {
             TimeUnit.MILLISECONDS.sleep(num);
@@ -32,7 +41,9 @@ public class RunCommand implements Command{
             System.out.println("Timer error");
         }
     }
-
+    /**
+     * Clears the console
+     */
     private void clear() {
         System.out.println("\033[H\033[2]");
     }
