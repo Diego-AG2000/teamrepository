@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class FireCommand implements Command{
     public Player player;
+<<<<<<< HEAD
     File fire = new File("./fire.txt");
     Scanner read = new Scanner(fire);
 
@@ -18,6 +19,9 @@ public class FireCommand implements Command{
      * default constructor
      * @param player
      */
+=======
+    
+>>>>>>> d4601120be600ef623454be8cf59b34bb55fe05b
     public FireCommand(Player player) {
         this.player = player;
     }
@@ -25,6 +29,9 @@ public class FireCommand implements Command{
      * Run through the file and prints the appropriate image
      */
     public void execute(){
+        File fire = new File("./fire.txt");
+        Scanner read = new Scanner(fire);
+
         while(read.hasNextLine()) {
             int i = 0;
             for(i = 0; i < 4; i++) {
@@ -34,6 +41,7 @@ public class FireCommand implements Command{
             sleep(1);
         }
         clear();
+        read.close();
     }
     /**
      * Sleeps the program
