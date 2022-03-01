@@ -11,8 +11,7 @@ import java.util.Scanner;
 
 public class FireCommand implements Command{
     public Player player;
-    
->>>>>>> d4601120be600ef623454be8cf59b34bb55fe05b
+
     public FireCommand(Player player) {
         this.player = player;
     }
