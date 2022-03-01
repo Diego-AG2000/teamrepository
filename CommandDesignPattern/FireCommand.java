@@ -11,15 +11,6 @@ import java.util.Scanner;
 
 public class FireCommand implements Command{
     public Player player;
-<<<<<<< HEAD
-    File fire = new File("./fire.txt");
-    Scanner read = new Scanner(fire);
-
-    /**
-     * default constructor
-     * @param player
-     */
-=======
     
 >>>>>>> d4601120be600ef623454be8cf59b34bb55fe05b
     public FireCommand(Player player) {
