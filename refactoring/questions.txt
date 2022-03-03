@@ -1,0 +1,20 @@
+Camels have three sets of eyelids, True
+It is possible to sneeze while sleeping, False
+Australia is a country as well as a continent, True
+Herbivore animals consume meat, False
+The cell nucleus was discovered by Robert Brown, True
+The national flag of America has 51 stars, True
+Pneumonia is an infection that affects lungs, True
+The capital of Spain is Madrid, True
+Ears are responsible for smelling, False
+The color of cherries is red, True
+Butterflies are not birds, True
+The capital of France is Washington DC, False
+ There are four lungs found in the human body, False
+ The human body consists of 150 bones, False
+ Jupiter is the smallest planet in the solar system, False
+ Mt. Everest is the highest mountain in the world, True
+ Seeds of cotton get dispersed by water, False
+ Molecule is the smallest unit of matter, False
+ The Sahara desert is the biggest desert in the world, True
+ A group of monkeys is called a herd, False
